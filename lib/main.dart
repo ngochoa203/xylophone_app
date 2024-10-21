@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-void main() => runApp(XylophoneApp());
+void main() => runApp(const XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
-  const XylophoneApp({Key? key}) : super(key: key);
+  const XylophoneApp({super.key});
 
   void playSound(int soundNumber) {
     final player = AudioPlayer();
@@ -37,13 +37,13 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              buildKey(color: Color(0xFF4CAF50), soundNumber: 1),
-              buildKey(color: Color(0xFFE91E63), soundNumber: 2),
-              buildKey(color: Color(0xFFFF9800), soundNumber: 3),
-              buildKey(color: Color(0xFFFFEB3B), soundNumber: 4),
-              buildKey(color: Color(0xFF2196F3), soundNumber: 5),
-              buildKey(color: Color(0xFF9C27B0), soundNumber: 6),
-              buildKey(color: Color(0xFFCDDC39), soundNumber: 7),
+              buildKey(color: const Color(0xFF4CAF50), soundNumber: 1),
+              buildKey(color: const Color(0xFFE91E63), soundNumber: 2),
+              buildKey(color: const Color(0xFFFF9800), soundNumber: 3),
+              buildKey(color: const Color(0xFFFFEB3B), soundNumber: 4),
+              buildKey(color: const Color(0xFF2196F3), soundNumber: 5),
+              buildKey(color: const Color(0xFF9C27B0), soundNumber: 6),
+              buildKey(color: const Color(0xFFCDDC39), soundNumber: 7),
             ],
           ),
         ),
